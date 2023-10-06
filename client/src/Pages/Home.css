@@ -1,0 +1,160 @@
+/* HeroSection.css */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:whitesmoke; 
+    color: black; 
+    font-family: 'raleway, sans-serif';
+    font-size: 17px;
+    padding:0.25rem 1rem;
+}
+.hero-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    flex-direction: column-reverse; /* To stack content on mobile */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+    font-family: 'raleway, sans-serif';
+
+  }
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      padding:10px ;
+      margin-left: 8px;
+      justify-content: space-around;
+      
+    }
+   
+  }
+    
+
+  
+  .hero-content {
+    text-align: left;
+    max-width: 600px;
+    margin: 30px;
+    margin-top:0;
+    padding-top: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .hero-content {
+      text-align: left;
+      margin: 0;
+      padding: 10px;
+      justify-content: space-around;
+      overflow: hidden;
+    }
+  }
+    
+
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      text-align: left;
+    
+    }
+  }
+    
+
+  
+  p {
+    color:gray;
+    font-size: 1.5rem;
+    font-family: 'raleway, sans-serif';
+  }
+  @media screen and (max-width: 768px){
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #7c60cc;
+    border-radius: 25px 25px 25px 25px; 
+    padding:0.75rem 2rem; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    margin-right:6px;
+  }
+  @media screen and (max-width: 768px) {
+    .hero-image {
+      max-width: 100%;
+      margin-right:0;
+    }
+  }
+    
+
+  
+  /* Media query for responsive design */
+  @media (min-width: 768px) {
+ 
+  }
+  .middle-container{
+    background-color: whitesmoke;
+  }
+   .middle-container h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+}
+.middle-content{
+  gap: 2rem;
+  height:5px;
+  width:10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    flex-direction: column-reverse; /* To stack content on mobile */
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+    padding: 20px;
+    font-family: 'raleway, sans-serif';
+}
+.bottom-container{
+  background-color: #502abb;
+  color:white;
+  position: relative;
+  margin-top: 150px;
+  padding-top:100px;
+  border-radius: 30% 30% 0% 0%;
+  padding-bottom: 40px;
+}
+.bottom-container p{
+  color:whitesmoke;
+}
+.bottom-container h1{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: white;
+  border-radius: 30%;
+}
+.bottom-content{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding:20px;
+}
+.blue_estimatebtn{
+  justify-content: center;
+}
