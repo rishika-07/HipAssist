@@ -1,64 +1,3 @@
-// import React, { useState } from 'react';
-// import './Navbar.css';
- 
-
-// import logo from './Images/logo.png';
-// import { Link } from 'react-router-dom';
-
-// function Navbar() {
-//   const [isMenuOpen, setMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!isMenuOpen);
-//   };
-
-//   return (
-//     <nav>
-//       <div className="left">
-//         <div className="logo">
-//           <Link to="/">
-//             <img src={logo} alt="logo" className="logo_img" style={{ width: '180px', height: '70px' }} />
-//           </Link>
-//         </div>
-//         <div className="menu-icon" onClick={toggleMenu}>
-//           <i className={`fa ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
-//         </div>
-//       </div>
-//       <div className={`center ${isMenuOpen ? 'show' : ''}`}>
-//         <ul className="nav-links">
-//           <li>
-//           <a href='/Products'><Link to="/Products">Products</Link></a>
-//           </li>
-//           <li>
-//             <Link to="/UseCases">Use Cases</Link>
-//           </li>
-//           <li>
-//             <Link to="/Company">Company</Link>
-//           </li>
-//           <li>
-//             <Link to="/joinUs">Join Us</Link>
-//           </li>
-//         </ul>
-//       </div>
-//       <div className="right">
-//         <ul className="action-links">
-//           <li>
-//             <Link to="/GetDemo">Get a demo</Link>
-//           </li>
-//           <li>
-//             <Link to="/Login">Login</Link>
-//           </li>
-//         </ul>
-//         <div className="rightMost"></div>
-//         <button>Get Started</button>
-//       </div>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
-
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from './Images/logo.png';
@@ -93,8 +32,8 @@ function App() {
             </ul>
           </nav>
           <div className={`right-menu ${menuOpen ? 'active' : ''}`}>
-          <a href="/GetDemo">Get a Demo</a>
-          <a href="/Login">Login</a>
+          <Link to="/GetDemo"><a href="/GetDemo">Get a Demo</a></Link>
+          <Link to="/Login"><a href="/Login">Login</a></Link>
             <button className="get-started-button">Get Started</button>
           </div>
         </div>

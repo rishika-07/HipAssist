@@ -1,0 +1,71 @@
+.CustomCaseContainer{
+    margin-top: 80px;
+    padding:40px;
+    display:grid;
+    grid-template-columns: 1fr 1.5fr ;
+    background-color: whitesmoke;
+}
+.CustomCaseContainer h1{
+    font-size: 3rem;
+    color:black;
+}
+
+.CustomCaseContainer h3{
+    font-size: larger;
+    color:gray;
+}
+.CustomCaseContainer a{
+    color:#502abb;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    .CustomCaseContainer{
+        display: flex;
+        flex-direction: column;
+        padding:40px
+    }
+    .CustomCaseContainer img{
+        margin-top: 30px;
+    }
+}
+    
+
+.CustomCaseContainerLower{
+    margin-top: 60px;
+    padding:40px;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+.CustomCaseContainerLower h1{
+    font-size: 3rem;
+    color:black;
+}
+.CustomCaseContainerLower h3{
+    font-size: larger;
+    color:gray;
+}
+.CustomCaseContainerLower a{
+    color:#502abb;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.CustomCaseContainerLower img{
+    margin-left: 80px;
+    padding:20px;
+}
+@media screen and (max-width: 768px){
+    .CustomCaseContainerLower{
+        display: flex;
+        flex-direction: column;
+        padding:40px
+    }
+    .CustomCaseContainerLower img{
+        margin-top: 30px;
+    }
+}
+    

@@ -8,6 +8,11 @@ import c_logo4 from '../Components/Images/c_logo4.png';
 import c_logo5 from '../Components/Images/c_logo5.png';
 import c_logo6 from '../Components/Images/c_logo6.png';
 
+import SecondHalfContainer1img from '../Components/Images/SecondHalfContainer1img.png';
+import CustomCase from '../Components/CustomCase';
+import GridLayout from '../Components/GridLayout';
+import BlueContentHomepage from '../Components/BlueContentHomepage';
+
 
 const Home = () => {
   return (
@@ -36,33 +41,74 @@ const Home = () => {
         </div>
         </div>
         
+
+       
+         
+           
         <div className="bottom-container">
+   
         <h1>Get Your ROI In Weeks</h1>
         <div className="bottom-content">
          <div className="bottom-content1">
           <h1>100X</h1>
-          <h3>faster closures</h3>
+          <h1>faster closures</h1>
           <p>with a highly empowered staff across sales and support</p>
          </div>
-
+       
          <div className="bottom-content2">
           <h1>140%</h1>
-          <h3>user engagement</h3>
+          <h1>user engagement</h1>
           <p>your users spend more time on the using product than learning</p>
          </div>
 
          <div className="bottom-content3">
           <h1>2X</h1>
-          <h3>ticket deflections</h3>
+          <h1>ticket deflections</h1>
           <p>rom your baseline today and achieve up to 80% self serve</p>
          </div>
 
         </div>
-        <button className='blue_estimatebtn'>Estimate your Savings</button>
+        <div className='blue_estimatebtn'>
+        <button className="estimate_button" >Estimate your Savings</button>
+        </div>
           </div>
-    </div>
-   
-  );
-};
+          
+          
+          <div className='SecondHalfContainer1'>
+           
+                <div className='SecondHalfContainer1Content'>
+                  <h1>
+                Understands any data format, coachable in a single click.
+                </h1>
+                <h3>Connects securely with your APIs and favourite tools via an ever expanding plugin library. Updates automatically on your schedule. Magically blends synthesis across source types.</h3>
+                <a href='/GetDemo'>Request a demo </a>
+                </div>
+                 <div>
+                 <img src={SecondHalfContainer1img} alt='SecondHalfContainer1img'style={{width:'90%'}}/>
+                 </div>
+           </div>
+           <div>
+          <GridLayout/>
+          </div>
+          <div>
+          <CustomCase/>
+          </div>
+          <div>
+            <BlueContentHomepage/>
+          </div>
+         
+</div>
+
+    
+);
+}; 
+               
+               
+
+
+          
+
+
+     
 
 export default Home;

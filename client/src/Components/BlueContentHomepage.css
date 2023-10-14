@@ -1,0 +1,23 @@
+.BlueContentHomepageContainer{
+    background-color:#08244e ;
+    margin-top: 80px;
+    padding:80px;
+    color:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    
+}
+.BlueContentHomepageContainer h1{
+    font-size: 2.5rem;
+    color:white;
+}
+.BlueContentHomepageContainer h3{
+    font-size: larger;
+    color:white;
+    font-weight: 400;
+}
+.BlueContentHomepageContainer ol{
+    font-size: 1.5rem;
+    color:white;
+    font-weight: 600;
+}

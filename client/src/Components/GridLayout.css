@@ -1,0 +1,55 @@
+.grid-container {
+    padding-left:20px;
+    margin-top:80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Vertically center the content */
+    justify-content:center; /* Horizontally center the content */
+    height: 100vh; /* Adjust the height as needed, 100vh is 100% of the viewport height */
+  }
+  
+  .static-text {
+    text-align: left; /* Center the text within the column */
+   padding:40px;
+  }
+  .static-text h1{
+    font-size: 3rem;
+  color:black;
+  }
+  
+ 
+  .static-text h3{
+    font-size: larger;
+    color:gray;
+  }
+  .static-text a{
+    color:#502abb;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .scrollable-images {
+    overflow: auto; /* Add scroll if the content overflows */
+    max-width: 100%; /* Ensure the images don't exceed the column width */
+    max-height: 100vh; /* Limit the height of the scrollable images */
+  }
+  
+  .scrollable-images image{
+    width:50%;
+  }
+  @media screen and (max-width: 768px){
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+      padding:40px
+    }
+    .static-text{
+        align-items: center;
+    }
+    .scrollable-images{
+      margin-top: 30px;
+    }
+  }
+    
+  
