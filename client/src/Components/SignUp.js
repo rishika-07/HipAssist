@@ -5,6 +5,7 @@ import { Link,useNavigate} from 'react-router-dom';
 import signup from './Images/signup.jpeg';
 import {useUserAuth} from '../context/UserAuthContext';
 import {Form, Alert} from "react-bootstrap";
+import GoogleButton from "react-google-button";
 
 
 function Signup() {
@@ -13,7 +14,7 @@ function Signup() {
   const[password,setPassword]=useState("");
   const[error,setError]=useState("");
 
-  const {signUp}=useUserAuth();
+  const {signUp,googleSignIn}=useUserAuth();
   const navigate = useNavigate();
 
    const handleSubmit = async (e) => {
@@ -27,6 +28,17 @@ function Signup() {
      setError(err.message);
     }
    }
+   const handleGoogleSignIn= async (e)=>{
+    e.preventDefault();
+  
+    try{
+     await googleSignIn();
+     navigate("/Login")
+    }
+    catch(err){
+     setError(err.message);
+    }
+    }
 
   return (
     <div className="signup-popup">
@@ -54,8 +66,8 @@ function Signup() {
             <div className="or-divider">
               <span>OR</span>
             </div>
-            <button className="google-signup-button">Sign Up with Google</button>
-            <p>Already have an account? <Link to="/Login">Log In</Link></p>
+            <GoogleButton className="google-signup-button" onClick={handleGoogleSignIn}/>
+            <p className='account-exists'>Already have an account? <Link to="/Login">Log In</Link></p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 .login-popup{
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .login-container {
@@ -50,6 +51,7 @@ input {
   border-radius: 3px;
   padding: 10px 20px;
   cursor: pointer;
+  width:210px;
 }
 
 .or-divider {
@@ -122,5 +124,10 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
+.forgottenPassword{
+  font-size: medium;
+}
+.no-account{
+  font-size: large;
+}
 /* Rest of the CSS remains the same */

@@ -12,6 +12,7 @@ import GetDemo from './Pages/GetDemo';
 import Home from './Pages/Home';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
+import ForgottenPassword from"./Components/ForgottenPassword";
 import {UserAuthContextProvider} from "./context/UserAuthContext";
 import ProtectedRoute from './Components/ProtectedRoute';
 
@@ -27,6 +28,8 @@ function App() {
       <Route path="/GetDemo" element={<GetDemo />}/>
       <Route path="/Login" element={<Login />}/>
       <Route path="/SignUp" element={<SignUp />}/>
+
+      <Route path="/resetPassword" element={<ForgottenPassword />}/>
       <Route path="/" element={
    
         <Home />

@@ -39,6 +39,13 @@ function Login() {
   }
   }
 
+  const handleReset =()=>{
+    try{
+    navigate("/resetPassword");
+  }catch(err){
+
+  }
+  }
 
   return (
       <div className="login-popup">
@@ -59,13 +66,14 @@ function Login() {
                     <label>Password</label>
                     <input type="password" placeholder="Enter your password" onChange={(e)=>setPassword(e.target.value)} />
                   </div>
+                  <p className="forgottenPassword" onClick={handleReset}>forgot password ?</p>
                   <button className="login-button">Login</button>
                 </Form>
                 <div className="or-divider">
                   <span>OR</span>
                 </div>
                 <GoogleButton className="google-login-button" type="dark" onClick={handleGoogleSignIn} />
-                <p>Don't have an account? <Link to="/SignUp">Sign Up</Link></p>
+                <p className='no-account'>Don't have an account? <Link to="/SignUp">Sign Up</Link></p>
               </div>
             </div>
           </div>
