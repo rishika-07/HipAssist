@@ -1,9 +1,12 @@
 import React from "react";
 import "./BlueContentHomepage.css";
-
+import IsmLogo from "../Components/Images/IsmLogo.png";
+import AicpaLogo from "../Components/Images/AicpaLogo.png";
+import appSecureLogo from "../Components/Images/appSecureLogo.png";
 
 function BlueContentHomepage(){
     return(
+        <div className="heroContainerBlue">
         <div className="BlueContentHomepageContainer">
             <div className="BlueContentHomepageContent">
                 <h1>
@@ -20,6 +23,23 @@ function BlueContentHomepage(){
                     <li>LLMs hosted in your VPC</li>
                 </ol>
             </div>
+            <div className="internalGridImages">
+                <div>
+                    <img src={IsmLogo} style={{width:"170px"}}/>
+                </div>
+
+                <div>
+                    <img src={AicpaLogo} style={{width:"170px"}}/>
+                </div>
+
+                <div>
+                    <img src={appSecureLogo} style={{width:"170px"}}/>
+                </div>
+
+            </div>
+            </div>
+
+            <button>write us for a free consultation</button>
         </div>
     )
 }

@@ -8,11 +8,14 @@ import c_logo3 from '../Components/Images/c_logo3.png';
 import c_logo4 from '../Components/Images/c_logo4.png';
 import c_logo5 from '../Components/Images/c_logo5.png';
 import c_logo6 from '../Components/Images/c_logo6.png';
+import byYourSideImg from '../Components/Images/byYourSideImg.png';
+import CarousalSection from '../Components/Carousel';
 
 import SecondHalfContainer1img from '../Components/Images/SecondHalfContainer1img.png';
 import CustomCase from '../Components/CustomCase';
 import GridLayout from '../Components/GridLayout';
 import BlueContentHomepage from '../Components/BlueContentHomepage';
+import CustomApiSectionHomePage from "../Components/CustomApiSectionHomePage";
 import { useUserAuth } from '../context/UserAuthContext';
 
 const Home = () => {
@@ -102,7 +105,52 @@ const Home = () => {
           <div>
             <BlueContentHomepage/>
           </div>
+        
           </div>  
+         
+         
+          <div className='CustomApiSection'>
+            <div className='CustomApiSectionContext'>
+               <h1>Connect easily with your current stack</h1>
+               <p>Plug into your favourite tools for sources, skills and channels seamlessly. We are adding new adaptors by the day.</p>
+               <a href='/GetDemo'>Request a demo </a>
+            </div>
+            
+            <div>
+            <CustomApiSectionHomePage/>
+            </div>
+         
+
+        
+
+         </div>
+         <div className='byYourSide'>
+             
+             <div className='byYourSideContent'>
+                   <h1>Always by your side with our white glove services</h1>
+                     <ol>
+                      <li>Ingesting custom schema</li>
+                    <li>Interpreting exotic data formats</li>
+                    <li>New content e.g. FAQs from tickets</li>
+                    <li>Niche skills e.g. compose a document</li>
+                    <li>Connections with your systems</li>
+                    <li>PII redaction</li>
+                     </ol>
+                   <a href='/GetDemo'>Contact Us </a>
+                </div>
+                 <div>
+                  <img src={byYourSideImg} style={{width:"100%", height:"95%"}}/>
+                 </div>
+          </div>
+          <div className='productLove'>
+            <h1>Product love from product leaders</h1>
+            <p>Evangelists from very large organisations with some of most stringent infosec standards believe in us and the platform.</p>
+          </div>
+
+          <div className='Carousal'>
+            <CarousalSection/>
+          
+          </div>
 </div>
 
     

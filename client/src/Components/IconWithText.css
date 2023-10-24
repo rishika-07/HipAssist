@@ -1,0 +1,15 @@
+.icon-with-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically center the icon and text */
+  }
+  
+  .icon {
+    
+    margin-right: 10px; /* Add spacing between the icon and text */
+  }
+  .text-style{
+    font-size:1.1rem;
+    font-weight: bold;
+
+  }

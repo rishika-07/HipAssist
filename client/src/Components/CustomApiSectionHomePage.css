@@ -1,0 +1,28 @@
+.heroContainerSection{
+    display: flex;
+    flex-direction:column;
+   
+}
+
+.internalgridIcons1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap:1px;
+}
+
+.icons{
+    background-color: rgb(218, 223, 228);
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    border-radius: 50%;
+}
+.icons1{
+    background-color: rgb(218, 223, 228);
+    width:130px;
+    height:fit-content;
+    padding-left:20px;
+    padding-right: 40px;
+    border-radius: 30px;
+}

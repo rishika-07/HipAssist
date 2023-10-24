@@ -135,14 +135,22 @@
 
 
 .bottom-container{
-  background-color: #361a83;
+  background-color: blueviolet;
   color:white;
   position: relative;
   margin-top: 120px;
   padding-top:40px;
- 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-bottom: 100px;
 
+}
+@media screen and (max-width: 768px) {
+  .bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .bottom-container p{
   color:whitesmoke;
@@ -205,6 +213,7 @@
 .SecondHalfContainer1 img{
   margin-left: 20px;
   padding:40px;
+  
 }
 @media screen and (max-width: 768px){
   .SecondHalfContainer1{
@@ -244,4 +253,80 @@ color: black;
  text-decoration: none;
  font-size: 1.5rem;
  font-weight: bold;
+}
+.CustomApiSection{
+  margin-top: 80px;
+  padding-left:40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display:grid;
+  grid-template-columns: 1fr 1.5fr ;
+
+  
+
+}
+.CustomApiSection h1{
+  font-size: 3rem;
+    color:black;
+}
+.CustomApiSectionContext{
+  padding-right:30px;
+}
+.CustomApiSection a{
+  color:#502abb;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.byYourSide{
+  margin-top: 120px;
+  padding: 40px;
+  margin-left:0px;
+  margin-right:30px;
+ overflow:hidden;
+  display:grid;
+  grid-template-columns: 1fr 2fr ;
+  
+}
+.byYourSide h1{
+  font-size: 3rem;
+  color:black;
+}
+ 
+.byYourSide a{
+  color:#502abb;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.byYourSide ol{
+  color:#7a797d
+}
+.byYourSide img{
+  margin-left: 40px;
+  border-radius: 3%;
+}
+.productLove{
+  width:75%;
+  margin-left:12%;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:100px;
+
+}
+.productLove h1{
+  font-size: 2rem;
+  text-align: center;
+}
+.productLove p{
+  text-align: center;
+}
+.Carousal{
+  padding:50px;
+  width:90vw;
+  
+  align-items: center;
+  margin-left: 6%;
+  margin-bottom: 50px;
 }

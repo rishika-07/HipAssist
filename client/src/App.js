@@ -16,6 +16,8 @@ import ForgottenPassword from"./Components/ForgottenPassword";
 import {UserAuthContextProvider} from "./context/UserAuthContext";
 import ProtectedRoute from './Components/ProtectedRoute';
 
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className='app'>
