@@ -10,11 +10,15 @@ import JoinUs from './Pages/JoinUs';
 import UseCase from './Pages/UseCase';
 import GetDemo from './Pages/GetDemo';
 import Home from './Pages/Home';
-import Login from './Pages/Login';
+import Login from './Components/Login';
+import SignUp from './Components/SignUp';
+import {UserAuthContextProvider} from "./context/UserAuthContext";
+import ProtectedRoute from './Components/ProtectedRoute';
+
 function App() {
   return (
     <div className='app'>
-      <Navbar/>
+      <UserAuthContextProvider>
      <Routes>
       <Route path="/Company" element={<Company />}/>
       <Route path="/Products" element={<Product/>}/>
@@ -22,8 +26,14 @@ function App() {
       <Route path="/UseCase" element={<UseCase />}/>
       <Route path="/GetDemo" element={<GetDemo />}/>
       <Route path="/Login" element={<Login />}/>
-      <Route path="/" element={<Home />}/>
-      </Routes>   
+      <Route path="/SignUp" element={<SignUp />}/>
+      <Route path="/" element={
+   
+        <Home />
+       
+      }/>
+      </Routes>  
+      </UserAuthContextProvider> 
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'; // Create a CSS file for styling
 import hero from '../Components/Images/hero.png'; 
 import c_logo1 from '../Components/Images/c_logo1.png';
+import Navbar from '../Components/Navbar';
 import c_logo2 from '../Components/Images/c_logo2.png';
 import c_logo3 from '../Components/Images/c_logo3.png';
 import c_logo4 from '../Components/Images/c_logo4.png';
@@ -12,11 +13,16 @@ import SecondHalfContainer1img from '../Components/Images/SecondHalfContainer1im
 import CustomCase from '../Components/CustomCase';
 import GridLayout from '../Components/GridLayout';
 import BlueContentHomepage from '../Components/BlueContentHomepage';
-
+import { useUserAuth } from '../context/UserAuthContext';
 
 const Home = () => {
+  const {user}=useUserAuth();
+  console.log(user);
   return (
+    <div>
+    <Navbar/>
      <div className="main-container">
+  
     <div className="hero-container">
       <div className="hero-content">
         <h1>Close deals faster, halve support costs, effortlessly with AI</h1>
@@ -96,7 +102,7 @@ const Home = () => {
           <div>
             <BlueContentHomepage/>
           </div>
-         
+          </div>  
 </div>
 
     
