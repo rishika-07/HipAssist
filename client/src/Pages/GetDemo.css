@@ -1,0 +1,25 @@
+.demoContainer{
+ background-color: #4d1782;
+ color: white;
+    width: 100vw;
+    height:100vh;
+    font-family: 'raleway, sans-serif';
+}
+.heroContent{
+    color:white;
+   
+    text-align: center;
+    padding-top: 10%;
+
+}
+.heroContent h1{
+    font-family: 'raleway, sans-serif';
+    font-size: 3rem;
+    font-weight: 800;
+}
+.heroContent ul{
+    margin-top: 60px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+.FooterContainer{
+    background-color: whitesmoke;
+    width: fit-content;
+    height:fit-content;
+    padding: 40px;
+}
+.FooterContent{
+    display:grid;
+    grid-template-columns: 1fr 1fr  ;
+    justify-content: space-between;
+    gap:1px;
+    padding:40px;
+   
+}
+.logoContentLeft{
+    line-height: 80px;
+    padding: 0px 0px 0px 20px;
+    align-items: left;
+}
+.logoContentLeft h2{
+    font-size: 1.5rem;
+  
+    color:black;
+}
+.logoContentRightGrid{
+    margin-left: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+}
+.logoContentRightGrid h2{
+    font-size: 1.3rem;
+    color:black;
+}
+.logoContentRightGrid ul{
+    color:lightslategray;
+}
+.logoContentRightGrid ul li{
+    list-style: none;
+    padding: 2px;
+}
+.logoContentRightGrid ul :hover{
+    color: black;
+    cursor: pointer;
+}

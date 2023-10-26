@@ -6,7 +6,7 @@ function CarousalSection() {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100"
           src="https://th.bing.com/th/id/OIP.dLLGN4LHHnI40OZoX6_CNwHaFj?pid=ImgDet&rs=1"
           alt="First slide"
         />
@@ -17,7 +17,7 @@ function CarousalSection() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100"
           src="https://th.bing.com/th/id/R.a23e2dcdd3de73def6ddbd3cae1742c6?rik=Qp5z6JrTCMtjVg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f04%2f06%2f338054-landscape-Sun.jpg&ehk=SsN0SMy0iAXyYPKSGIUJc1FqWGO2tx3k%2fQngJQj%2flPs%3d&risl=&pid=ImgRaw&r=0"
           alt="Second slide"
         />

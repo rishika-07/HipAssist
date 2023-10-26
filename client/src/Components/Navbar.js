@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from './Images/logo.png';
 import {Link} from 'react-router-dom';
 
-function App() {
+function Navbar () {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="navbar">
+        <div className="navbar" >
           <div className="logo">
            <Link to="/"><a href="/"><img src={logo} alt="Company Logo" /></a></Link> 
           </div>
@@ -42,5 +42,5 @@ function App() {
   );
 }
 
-export default App;
+export default Navbar;
 

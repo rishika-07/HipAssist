@@ -6,7 +6,7 @@
 
 .internalgridIcons1{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     justify-content: space-around;
     gap:1px;
 }
